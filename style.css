@@ -1,0 +1,431 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
+}       
+
+.head {
+  text-align: center;
+  width: 100%;
+  color: #f5f5f5;
+  background-image: url('bg-top.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slidetop 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content img{
+  padding: 10px 20px;
+  height: 15%;
+  width: 9%;
+}
+.icons i{ 
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    gap: 0.4rem;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    animation: slideright 1s ease forwards;
+    animation-delay: calc(.2s * var);
+}
+.icons i:hover{
+  transform: rotate(360deg);
+}
+.about-me{
+    text-align: center;
+    padding: 50px;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(.2s * var);
+}
+.about-me img {
+    display: block;
+    margin: 0  auto;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 7px 25px rgba(252, 252, 252, 0.5);
+    overflow: hidden;
+    animation: sliderbottom 1s ease forwards;
+    animation-delay: calc(.2s * var);
+} 
+.about-me p{
+  text-align: left;
+  animation: slidebottom 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+.container {
+  display: flex;
+}
+
+.info {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: slideright 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+.info .btn {
+  float: left;
+  display: inline-flex;
+  align-items: center;
+  background-color: #FF4500;
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+}
+.btn i {
+  margin-right: 5px; 
+}
+.internal{
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(.2s * var);
+}
+.title {
+  margin-top: 0;
+  grid-column: span 4;
+  text-align: center; 
+}
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+  background-color: rgb(197, 197, 197);
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 50%;
+  padding: 20px;
+}
+.icon-item p {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.milestone{
+  padding: 20px;
+  text-align: center;
+  color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.sysinfotools.com/asset/img/when-to-use/resolve.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+.milestones{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  animation: slideright 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+.icon i {
+  font-size: 24px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #FF4500;
+  padding: 20px;
+}
+.icon p {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.icon h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+.milestones h2{
+  padding: 20px;
+}
+.work-process{
+  width: 100%;
+  margin: 18px;
+  text-align: center;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 44vh;
+ background-color: grey;
+ animation: slideleft 1s ease forwards;
+ animation-delay: calc(.2s * var);
+}
+.work-process img{
+  mix-blend-mode: multiply;
+}
+.cover{
+  width: 100%;
+  background-color: grey;
+  color: black;
+}
+.cover h2{
+  margin-top: 17px;
+}
+.clients{
+  animation: slideright 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+.clients h2{
+  margin-top: 34px;
+  text-align: center;
+}
+.clients p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section1bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:5px;
+  padding: 50px 30px;
+}
+.section1bottom img{
+  height: 140px;
+}
+.services {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  animation: slideright 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-container {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+}
+
+.service-item {
+  width: calc(50% - 10px); 
+  margin-bottom: 20px; 
+  display: flex;
+  align-items: center;
+}
+
+.service-content {
+  text-align: left;
+  flex: 1;
+}
+.service-content h4{
+  margin-right: 0;
+}
+.service-contentt h4{
+  text-align: right;
+}
+.service-content p{
+  text-wrap: wrap;
+}
+.service-icon {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 10px; 
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 768px) {
+  .service-item {
+    flex-basis: calc(100% - 20px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-item.web-development,
+  .service-item.graphic-design {
+    flex-basis: calc(50% - 20px);
+  }
+}
+.quote{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.bing.com/th/id/OIP.681gUe_9KVSq7swBxHwYHgHaCc?pid=ImgDetMain');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  color: #2e2b2b;
+  animation: slideright 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+.quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 10px;
+  animation: slidetop 1s ease forwards;
+  animation-delay: calc(.2s * var);
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.iccon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #fff;
+  padding: 40px;
+}
+
+.location {
+  background-color: rgb(35, 187, 35);
+}
+h2{
+  letter-spacing: 0.3cap;
+}
+.email {
+  background-color: purple;
+}
+
+.phone {
+  background-color: rgb(0, 132, 255);
+}
+
+.content {
+  font-size: 16px;
+}
+
+
+.w-70 {
+  width: 70%;
+}
+footer {
+  background-color: grey;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+@keyframes slideleft {
+  0% {
+      transform: translateX(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slideright {
+  0% {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slidetop {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slidebottom {
+  0% {
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
